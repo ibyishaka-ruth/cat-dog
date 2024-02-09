@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    border: 0px;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#dog-img{
+    justify-content: center;
+    text-align: center;
+    margin: 30px 30px 30px 30px;
+    justify-items: center;
+    width: 30%;
+
+}
+.dog-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+}
+#button{
+    font-size: large;
+   width: 30%;
+   background-color:brown;
+   padding: 2px 2px;
+}

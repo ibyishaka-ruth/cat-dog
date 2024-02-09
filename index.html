@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="./style.css">
+    <title>Doggg</title>
+</head>
+<body>
+    <div class="dog-container">
+    <img id="dog-img" src="dog.jpeg" alt="a dog">
+    <button id="button">GET A DOG </button>
+</div>
+<script>
+    var dog = document.getElementById("dog-img")
+    var button= document.getElementById("button")
+    button.addEventListener("click",() =>{
+        fetch("https://random.dog/woof.json")
+        .then( b => b.json())
+        .then(b =>{
+            dog. src= b.url;
+        })
+        .catch (err=>console.log(err))
+    })
+</script>
+    
+</body>
+</html>
